@@ -13,6 +13,11 @@ public class ArithmeticController {
 	@GetMapping("/add/{A}/{B}")
 	public String add(@PathVariable("A") int a,@PathVariable("B") int b)
 	{
-		return "Addition = " + (a+b);
+		return "" + (a+b);
+	}
+	@GetMapping("/sub/{A}/{B}")
+	public String sub(@PathVariable("A") int a,@PathVariable("B") int b)
+	{
+		return "" + (a-b);
 	}
 }
